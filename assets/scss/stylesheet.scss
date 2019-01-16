@@ -265,6 +265,10 @@ img {
     color: #ffffff;
 }
 
+.azulB3{
+    color: #1892B3;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -316,8 +320,35 @@ header {
             cursor: pointer;
             width: 185px;
             padding: 10px;
-            background-color: #FF0000;
+            text-align: center;
+            border-radius: 40px;
+            background-color: #FDB515;
         }
+    }
+}
+.movil {
+    display: block;
+
+    @media only screen and (min-width: 1024px) {
+        display: none;
+    }
+}
+
+.desktop {
+    display: none;
+
+    @media only screen and (min-width: 1024px) {
+        display: block;
+    }
+}
+
+
+//HERO IMAGE
+.space {
+    width: 100%;
+    height: 85px;
+    @media only screen and (min-width: 1024px) {
+        height: 97px;
     }
 }
 
@@ -325,7 +356,7 @@ header {
 .hero-container {
     width: 100%;
     position: relative;
-    border-bottom: 1px solid transparent;
+    background-color: #1892B3;
 
     .hero-data {
         width: 100%;
@@ -333,16 +364,11 @@ header {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.4) 75%), url('../img/jpg/hero-image-mobile.jpg') no-repeat;
         background-size: cover;
         background-position: center;
-        height: 330px;
-
-        @media only screen and (min-width: 1500px) {
-            height: 500px !important;
-        }
+        padding: 30px;
 
         .hero-data-cont {
             position: relative;
             width: 80%;
-            padding: 200px 0 0;
             margin: 0 auto;
             max-width: 1135px;
 
@@ -375,7 +401,7 @@ header {
 
     .price-container {
         width: 100%;
-        background-color: #ffffff;
+        background-color: #1892B3;
         padding: 15px 0;
         margin: 0 auto;
         display: flex;
@@ -386,11 +412,54 @@ header {
 
         div {
             width: auto;
-            margin: 0 7px;
-            line-height: 22px;
+            color: #ffffff;
 
             &:nth-child(1) {
                 width: 100%;
+                margin: 0;
+            }
+
+            &:nth-child(2) {
+                width: 100%;
+                margin: 0;
+            }
+
+            &:nth-child(3) {
+                width: 100%;
+                margin: 0;
+            }
+
+            &:nth-child(4) {
+                width: 100%;
+                margin: 0;
+            }
+
+            &:nth-child(5) {
+                margin: 0;
+            }
+
+            &:nth-child(6) {
+                width: 100%;
+                text-align: center;
+                max-width: 100%;
+                margin: 0;
+            }
+
+            &:nth-child(7) {
+                width: 100%;
+                text-align: center;
+                max-width: 100%;
+                margin: 0;
+            }
+
+            &:nth-child(8) {
+                margin: 0;
+            }
+
+            &:nth-child(9) {
+                width: 100%;
+                text-align: center;
+                max-width: 100%;
                 margin: 0;
             }
         }
@@ -407,11 +476,13 @@ header {
 
     @media only screen and (max-width: 1023px) {
         max-width: 600px;
+        padding: 35px 65px;
     }
 
     .form-title {
         text-align: center;
         margin-bottom: 10px;
+        padding: 0 5px;
     }
 
     .form-cont {
@@ -445,7 +516,8 @@ header {
                 cursor: pointer;
                 width: 100%;
                 padding: 20px;
-                background-color: #A90533;
+                border-radius: 40px;
+                background-color: #FDB515;
 
                 &:hover {
                     img {
@@ -478,7 +550,7 @@ header {
         text-align: center;
 
         a {
-            color: #A90533;
+            color: #ED4E33;
             cursor: pointer;
         }
     }
@@ -498,7 +570,7 @@ header {
         border-bottom: 1px solid #026CB5;
 
         .hero-data {
-            height: 470px;
+            height: 400px;
 
             .hero-data-cont {
                 position: relative;
@@ -529,8 +601,8 @@ header {
 
         .price-container {
             width: 100%;
-            background-color: #ffffff;
-            padding: 70px 0;
+            background-color: #1892B3;
+            padding: 50px 0 30px;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -538,15 +610,17 @@ header {
 
             div {
                 width: auto;
-                margin: 0 4px;
-                font-size: 18px;
+                margin: 5px 2px!important;
                 line-height: 22px;
-
-                &:nth-child(1) {
-                    font-size: 30px;
-                    width: 100%;
-                    margin: 0 0 10px;
-                }
+                &:nth-child(1) {margin: 0 2px 5px; color: #FDB515; line-height: 27px;}    
+                &:nth-child(2) {margin: -10px 2px 5px!important; line-height: 60px;}    
+                &:nth-child(3) {margin: -10px 2px 5px!important; line-height: 38px;}    
+                &:nth-child(4) {color: #FDB515; }    
+                &:nth-child(5) {}
+                &:nth-child(6) {width: auto;}    
+                &:nth-child(7) {width: auto;}    
+                &:nth-child(8) {}    
+                &:nth-child(9) {margin: 5px 2px 0;width: auto;}
             }
         }
     }
@@ -739,7 +813,7 @@ hr {
         text-align: center;
         padding: 10px;
         &:nth-child(1) {
-            border: 1px solid #FF0000;
+            background-color: #2D637F;
             line-height: 24px;
             max-width: 522px;
         }
@@ -766,7 +840,7 @@ hr {
         margin: 0 auto;
         max-width: 340px;
         padding: 38px 25px;
-        border: 1px solid #FF0000;
+        background-color: #EBEBEB;
         margin: 12px auto;
         p {
             margin: 15px auto 0;
@@ -810,7 +884,6 @@ hr {
             text-align: left;
             padding: 30px 42px;
             &:nth-child(1) {
-                border: 1px solid #FF0000;
                 line-height: 32px;
                 max-width: 522px;
                 font-size: 26px;
@@ -829,7 +902,7 @@ hr {
         flex-wrap: wrap;
         align-items: initial;
         margin: 0 auto;
-        max-width: 1270px;
+        max-width: 1185px;
         .new-world-date-cont {
             width: 100%;
             display: flex;
@@ -838,7 +911,6 @@ hr {
             margin: 0 auto;
             max-width: 340px;
             padding: 38px 25px;
-            border: 1px solid #FF0000;
             margin: 12px auto;
             p {
                 margin: 15px auto 0;
@@ -854,7 +926,7 @@ hr {
 @media only screen and (min-width: 1024px) {
     .new-world-desc-cont {
         width: 100%;
-        max-width: 1187px;
+        max-width: 1135px;
         margin: 20px auto;
         display: flex;
         flex-wrap: wrap;
@@ -875,19 +947,15 @@ hr {
 .el-certificado-container {
     width: 100%;
     padding: 40px 17px;
-    background-color: #ffffff;
-    hr {
-        width: 100%;
-        display: none;
-        margin: 40px auto 0 !important;
-        max-width: 1135px;
-    }
+    background-image: url('../img/jpg/homepage_content_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     .el-certificado-title {
         width: 100%;
         text-align: center;
         line-height: 36px;
         margin-bottom: 10px;
-        max-width: 1190px;
+        max-width: 1165px;
     }
     .el-certificado-cont {
         width: 100%;
@@ -904,15 +972,37 @@ hr {
             max-width: 320px;
             line-height: 24px;
             text-align: center;
-            box-shadow: 0 2px 10px -2px gray;
-        }
+            position: relative;
+            &:nth-child(even){
+                background-color: #9DAD33;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0; right: 0;
+                    border-bottom: 30px solid white;
+                    border-left: 30px solid #9DAD33;
+                    width: 0;
+                }
+            }
+            &:nth-child(odd){
+                background-color: #1892B3;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    z-index: 2;
+                    bottom: 0; right: 0;
+                    border-bottom: 30px solid white;
+                    border-left: 30px solid #1892B3;
+                    width: 0;
+                }
+            }
+        } 
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .el-certificado-container {
-        padding: 90px 17px 0;
-        .el-certificado-media {}
+        padding: 90px 17px;
         .el-certificado-title {
             text-align: center;
             line-height: 38px;
@@ -933,12 +1023,7 @@ hr {
                 max-width: 270px;
                 line-height: 24px;
                 text-align: center;
-                box-shadow: 0 2px 10px -2px gray;
             }
-        }
-        hr {
-            display: block;
-            margin: 90px auto 0 !important;
         }
     }
 }
