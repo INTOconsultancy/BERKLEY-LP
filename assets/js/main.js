@@ -39,11 +39,11 @@ jQuery(document).ready(function () {
             jQuery('.button-movil-container').removeClass('add-mov');
             jQuery('.Logo-one').removeClass('size');
             jQuery('.Logo-two').removeClass('size');
-            jQuery('header').removeClass('header-size');
+            jQuery('.header-container').removeClass('header-space');
 
 
         } else {
-            jQuery('header').addClass('header-size');
+            jQuery('.header-container').addClass('header-space');
             jQuery('.Logo-one').addClass('size');
             jQuery('.Logo-two').addClass('size');
             jQuery('.Logo-two').addClass('remove');
