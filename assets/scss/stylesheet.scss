@@ -2126,15 +2126,15 @@ footer {
         .left {
             display: block;
             .footer-logo {
-                width: 97px;
+                width: 260px;
                 margin: 0 auto;
                 img {
-                    width: 97px;
+                    width: 260px;
                 }
             }
             .copyright {
                 width: 285px;
-                text-align: center;
+                text-align: left;
                 margin: 20px auto 10px;
             }
         }
@@ -2170,18 +2170,9 @@ footer {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
-                justify-content: center;
-                .footer-logo {
-                    width: 78px;
-                    margin: 0 auto;
-                    img {
-                        width: 78px;
-                    }
-                }
                 .copyright {
                     width: 285px;
-                    text-align: center;
-                    margin: 0 auto 0 20px;
+                    margin: 0;
                 }
             }
             .right {
