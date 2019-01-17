@@ -277,6 +277,10 @@ img {
     color: #9DAD33;
 }
 
+.azul62{
+    color: #003262;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -333,11 +337,14 @@ header {
         justify-content: center;
         a {
             cursor: pointer;
-            width: 175px;
-            padding: 7px 10px;
+            width: 195px;
+            padding: 7px 20px;
             text-align: center;
             border-radius: 40px;
             background-color: #FDB515;
+            &:hover{
+                background-color: #E09E19;
+            }
         }
     }
 }
@@ -505,18 +512,8 @@ header {
                 padding: 20px;
                 border-radius: 40px;
                 background-color: #FDB515;
-                &:hover {
-                    img {
-                        margin-left: 5px;
-                    }
-                }
-                img {
-                    width: 14px;
-                    margin-top: -5px;
-                    margin-left: 5px;
-                    -webkit-transition: all 300ms;
-                    -moz-transition: all 300ms;
-                    -o-transition: all 300ms;
+                &:hover{
+                    background-color: #E09E19;
                 }
             }
         }
@@ -534,6 +531,9 @@ header {
         a {
             color: #ED4E33;
             cursor: pointer;
+            &:hover{
+                text-decoration: underline!important;
+            }
         }
     }
 }
@@ -1994,6 +1994,9 @@ hr {
                         width: 100%;
                         padding: 13px 20px;
                         background-color: #ED4E33;
+                        &:hover{
+                            background-color: #C7412B
+                        }
                     }
                 }
             }
@@ -2134,7 +2137,7 @@ footer {
             }
             .copyright {
                 width: 285px;
-                text-align: left;
+                text-align: center;
                 margin: 20px auto 10px;
             }
         }
@@ -2172,6 +2175,7 @@ footer {
                 align-items: center;
                 .copyright {
                     width: 285px;
+                    text-align: left;
                     margin: 0;
                 }
             }

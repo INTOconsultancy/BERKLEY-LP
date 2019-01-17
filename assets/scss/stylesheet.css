@@ -266,6 +266,10 @@ img {
   color: #9DAD33;
 }
 
+.azul62 {
+  color: #003262;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -329,11 +333,14 @@ header {
 }
 .header-container .header-button a {
   cursor: pointer;
-  width: 175px;
-  padding: 7px 10px;
+  width: 195px;
+  padding: 7px 20px;
   text-align: center;
   border-radius: 40px;
   background-color: #FDB515;
+}
+.header-container .header-button a:hover {
+  background-color: #E09E19;
 }
 
 .movil {
@@ -511,16 +518,8 @@ header {
   border-radius: 40px;
   background-color: #FDB515;
 }
-.form .form-cont .button-container button:hover img {
-  margin-left: 5px;
-}
-.form .form-cont .button-container button img {
-  width: 14px;
-  margin-top: -5px;
-  margin-left: 5px;
-  -webkit-transition: all 300ms;
-  -moz-transition: all 300ms;
-  -o-transition: all 300ms;
+.form .form-cont .button-container button:hover {
+  background-color: #E09E19;
 }
 
 .private-data {
@@ -536,6 +535,9 @@ header {
 .private-data div a {
   color: #ED4E33;
   cursor: pointer;
+}
+.private-data div a:hover {
+  text-decoration: underline !important;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1935,6 +1937,9 @@ hr {
     padding: 13px 20px;
     background-color: #ED4E33;
   }
+  .certificado-container .certificado-cont .certificado-datos .certificado-button a:hover {
+    background-color: #C7412B;
+  }
 }
 .slick-next::before {
   content: url("../img/svg/icono-forward.svg") !important;
@@ -2067,7 +2072,7 @@ footer .footer-cont .left .footer-logo img {
 }
 footer .footer-cont .left .copyright {
   width: 285px;
-  text-align: left;
+  text-align: center;
   margin: 20px auto 10px;
 }
 footer .footer-cont .right .terminos-politicas-cont {
@@ -2103,6 +2108,7 @@ footer .footer-cont .right .terminos-politicas-cont a {
   }
   footer .footer-cont .left .copyright {
     width: 285px;
+    text-align: left;
     margin: 0;
   }
   footer .footer-cont .right .terminos-politicas-cont {
