@@ -514,7 +514,7 @@ header {
 .form .form-cont .button-container button {
   cursor: pointer;
   width: 100%;
-  padding: 20px;
+  padding: 20px 15px;
   border-radius: 40px;
   background-color: #FDB515;
 }
@@ -2004,6 +2004,13 @@ hr {
 }
 .slide-testimonio .testimonio {
   padding: 0 28px;
+}
+.slide-testimonio .testimonio .testimonio-img {
+  width: 112px;
+  height: 112px;
+  margin: 0 auto;
+  background-color: #4D4D4D;
+  border-radius: 50%;
 }
 .slide-testimonio .testimonio .testimonio-img img {
   width: 112px;

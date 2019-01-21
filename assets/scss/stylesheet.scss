@@ -327,6 +327,7 @@ header {
     .dinamic {
         display: none;
     }
+
     .size {
         @media only screen and (max-width: 400px) {
             width: 150px !important;
@@ -509,7 +510,7 @@ header {
             button {
                 cursor: pointer;
                 width: 100%;
-                padding: 20px;
+                padding: 20px 15px;
                 border-radius: 40px;
                 background-color: #FDB515;
                 &:hover{
@@ -2069,6 +2070,11 @@ hr {
     .testimonio {
         padding: 0 28px;
         .testimonio-img {
+                width: 112px;
+                height: 112px;
+                margin: 0 auto;
+                background-color: #4D4D4D;
+                border-radius: 50%;
             img {
                 width: 112px;
                 margin: 0 auto;
