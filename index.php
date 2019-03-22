@@ -157,7 +157,7 @@
     <!-- Sección Información -->
     <div class="informacion-container">
         <div class="informacion-cont">
-            <div class="informacion opsRe fs16 negro19">
+            <div class="informacion opsRe fs16 negro19" data-aos="fade-right" data-aos-delay="100">
                 El autor Peter Drucker dijo una vez “la cultura se come a la estrategia
                 para el desayuno”, y Bill Aulent del MIT añadió más tarde “y a la
                 tecnología para el lunch”; y en efecto, la realidad es que de nada sirve
@@ -172,7 +172,7 @@
                 transmitir su capacidad de adaptación a su ámbito empresarial y de
                 proyectar una visión compartida de futuro a organizaciones enteras.
             </div>
-            <div class="informacion opsRe fs16 negro19">
+            <div class="informacion opsRe fs16 negro19" data-aos="fade-right" data-aos-delay="200">
                 El objetivo de este curso es justamente ese: detonar el talento de líderes
                 con las bases y experiencia para potenciar su crecimiento e impulsar a
                 sus empresas; individuos con el empuje y la ambición necesarios para
@@ -194,7 +194,7 @@
             Características del programa
         </div>
         <div class="caracteristicas-cont">
-            <div class="caracteristicas">
+            <div class="caracteristicas" data-aos="fade-up" data-aos-delay="100">
                 <div class="caracteristica-img">
                     <img src="assets/img/svg/icono-programa-hibrido.svg" alt="PROGRAMA-HÍBRIDO">
                 </div>
@@ -209,7 +209,7 @@
                     </div>
                 </div>
             </div>
-            <div class="caracteristicas">
+            <div class="caracteristicas" data-aos="fade-up" data-aos-delay="100">
                 <div class="caracteristica-img">
                     <img src="assets/img/svg/icono-exploracion-ecosistema.svg" alt="EXPLORACIÓN-DEL-ECOSISTEMA-DE-SILICON-VALLEY">
                 </div>
@@ -226,7 +226,7 @@
                     </div>
                 </div>
             </div>
-            <div class="caracteristicas">
+            <div class="caracteristicas" data-aos="fade-up" data-aos-delay="100">
                 <div class="caracteristica-img">
                     <img src="assets/img/svg/icono-curso-espanol.svg" alt="CURSO-EN-ESPAÑOL">
                 </div>
@@ -242,7 +242,7 @@
                     </div>
                 </div>
             </div>
-            <div class="caracteristicas">
+            <div class="caracteristicas" data-aos="fade-up" data-aos-delay="100">
                 <div class="caracteristica-img">
                     <img src="assets/img/svg/icono-estudio-caso.svg" alt="ESTUDIO-DE-CASOS-Y-APRENDIZAJE-APLICADO">
                 </div>
@@ -258,7 +258,7 @@
                     </div>
                 </div>
             </div>
-            <div class="caracteristicas">
+            <div class="caracteristicas" data-aos="fade-up" data-aos-delay="100">
                 <div class="caracteristica-img">
                     <img src="assets/img/svg/icono-aprendizaje-pares.svg" alt="APRENDIZAJE-ENTRE-PARES">
                 </div>
@@ -271,7 +271,7 @@
                     </div>
                 </div>
             </div>
-            <div class="caracteristicas">
+            <div class="caracteristicas" data-aos="fade-up" data-aos-delay="100">
                 <div class="caracteristica-img">
                     <img src="assets/img/svg/icono-costo-duracion.svg" alt="COSTO-Y-DURACIÓN">
                 </div>
@@ -337,7 +337,7 @@
         </div>
         <div class="perfil-container-flex">
             <div class="perfil-cont">
-                <div class="perfil">
+                <div class="perfil" data-aos="zoom-in" data-aos-delay="100">
                     <div class="desc opsRe fs15 blanco">
                         CXOs, directores, presidentes,
                         vicepresidentes, gerentes senior
@@ -346,7 +346,7 @@
                         desde marketing hasta finanzas.
                     </div>
                 </div>
-                <div class="perfil">
+                <div class="perfil" data-aos="zoom-in" data-aos-delay="200">
                     <div class="desc opsRe fs15 blanco">
                         Ejecutivos con 10-20 años de
                         experiencia en posiciones
@@ -354,7 +354,7 @@
                         y roles de liderazgo.
                     </div>
                 </div>
-                <div class="perfil">
+                <div class="perfil" data-aos="zoom-in" data-aos-delay="300">
                     <div class="desc opsRe fs15 blanco">
                         Altos ejecutivos de América Latina
                         o profesionales con intensa actividad
@@ -363,7 +363,7 @@
                         profesional.
                     </div>
                 </div>
-                <div class="perfil">
+                <div class="perfil" data-aos="zoom-in" data-aos-delay="400">
                     <div class="desc opsRe fs15 blanco">
                         Emprendedores de alto nivel,
                         con experiencia, ambición y
@@ -419,32 +419,32 @@
             Para alcanzar este objetivo, al completar ese curso sus egresados habrán aprendido a...
         </div>
         <div class="perfil-egreso-cont">
-            <div class="egreso ralRe fs16 blanco">
+            <div class="egreso ralRe fs16 blanco" data-aos="zoom-in" data-aos-delay="100">
                 Identificar prácticas y tendencias clave para
                 liderar equipos, negocios y organizaciones de
                 alto desempeño.
             </div>
-            <div class="egreso ralRe fs16 blanco">
+            <div class="egreso ralRe fs16 blanco" data-aos="zoom-in" data-aos-delay="200">
                 Aplicar marcos de referencia para el desarrollo
                 de estrategias de negocio a lo largo de cadenas
                 de valor.
             </div>
-            <div class="egreso ralRe fs16 blanco">
+            <div class="egreso ralRe fs16 blanco" data-aos="zoom-in" data-aos-delay="300">
                 Adquirir una visión holística de la cadena de
                 operaciones de un negocio, con énfasis en el
                 manejo de productos y servicios.
             </div>
-            <div class="egreso ralRe fs16 blanco">
+            <div class="egreso ralRe fs16 blanco" data-aos="zoom-in" data-aos-delay="100">
                 Desarrollar un expertise financiero sobre las
                 aportaciones de la analítica de datos (business
                 analytics) a la toma de decisiones de negocio.
             </div>
-            <div class="egreso ralRe fs16 blanco">
+            <div class="egreso ralRe fs16 blanco" data-aos="zoom-in" data-aos-delay="200">
                 Impulsar una estrategia organizacional en ambientes
                 de innovación, haciendo las preguntas pertinentes
                 para la acertada toma de decisiones.
             </div>
-            <div class="egreso ralRe fs16 blanco">
+            <div class="egreso ralRe fs16 blanco" data-aos="zoom-in" data-aos-delay="300">
                 Generar un plan de negocio para su organización
                 con el propósito de abrir un área, enfrentar un
                 desafío o aprovechar una oportunidad de negocio.
@@ -710,7 +710,7 @@
                 entre los que destacan:
         </div>
         <div class="oportunidades-cont">
-            <div class="oportunidad">
+            <div class="oportunidad" data-aos="fade-up" data-aos-delay="100">
                 <div class="oportunidad-img">
                     <img src="assets/img/svg/icono-oportunidades-networking.svg" alt="Oportunidades-de-networking">
                 </div>
@@ -721,7 +721,7 @@
                     A través de nuestra red mundial de egresados y eventos especiales.
                 </div>
             </div>
-            <div class="oportunidad">
+            <div class="oportunidad" data-aos="fade-up" data-aos-delay="200">
                 <div class="oportunidad-img">
                     <img src="assets/img/svg/icono-oportunidades-desarrollo.svg" alt="Oportunidades-de-desarrollo">
                 </div>
@@ -732,7 +732,7 @@
                     Cortesía de nuestra bolsa de trabajo y programas de educación continua.
                 </div>
             </div>
-            <div class="oportunidad">
+            <div class="oportunidad" data-aos="fade-up" data-aos-delay="300">
                 <div class="oportunidad-img">
                     <img src="assets/img/svg/icono-oportunidades-aprendizaje.svg" alt="Oportunidades-de-aprendizaje">
                 </div>
