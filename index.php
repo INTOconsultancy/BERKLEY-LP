@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>BERKELEY | Data Science & Analytics</title>
+    <title>BERKELEY | Alta dirección e innovación</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/scss/stylesheet.css">
@@ -145,7 +145,7 @@
                             Tus datos personales no serán compartidos con terceros.
                         </div>
                         <div>
-                            <a class="grapBo fs14 rosaFB" href="#" target="_blank" rel="noopener noreferrer">
+                            <a class="grapBo fs14 rosaFB" href="https://www.eruditus.com/privacy-policy/" target="_blank" rel="noopener noreferrer">
                                 Política de Privacidad
                             </a>
                         </div>
@@ -706,7 +706,7 @@
     <div class="oportunidades-container">
         <div class="oportunidades-descripcion opsRe fs20 negro46">
                 Adicionalmente, tendrán acceso a todos los 
-                <a class="anaranjado77" href="http://" target="_blank" rel="noopener noreferrer">beneficios de los egresados de Berkeley-Hass,</a>
+                <a class="anaranjado77" href="https://www.haas.berkeley.edu/groups/alumni/benefits/" target="_blank" rel="noopener noreferrer">beneficios de los egresados de Berkeley-Hass,</a>
                 entre los que destacan:
         </div>
         <div class="oportunidades-cont">
@@ -768,8 +768,9 @@
             </div>
         </div>
         <div class="pages">
-            <a class="grapRe fs14 blanco" href="http://" target="_blank" rel="noopener noreferrer">Términos de servicio</a>
-            <a class="grapRe fs14 blanco" href="http://" target="_blank" rel="noopener noreferrer">Política de privacidad</a>
+            <a class="grapRe fs14 blanco" href="https://www.eruditus.com/terms-of-service/" target="_blank" rel="noopener noreferrer">Términos de servicio</a>
+            <a class="grapRe fs14 blanco" href="https://www.eruditus.com/privacy-policy/" target="_blank" rel="noopener noreferrer">Política de privacidad</a>
+            <a class="grapRe fs14 blanco" href="https://www.eruditus.com/cookie-policy/" target="_blank" rel="noopener noreferrer">Política de cookies</a>
         </div>
     </footer>
 
