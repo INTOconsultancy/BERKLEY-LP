@@ -320,7 +320,7 @@ body {
 //HEADER
 header {
     width: 100%;
-    padding: 18px;
+    padding: 15px 18px;
     background-color: #ffffff;
     box-shadow: 0 4px 2px -2px gray;
     position: fixed;
@@ -414,7 +414,7 @@ header {
     height: 80px;
 
     @media only screen and (min-width: 1024px) {
-        height: 97px;
+        height: 94px;
     }
 }
 
@@ -587,7 +587,7 @@ header {
 
     .formulario-container {
         position: absolute;
-        top: 21px;
+        top: 15px;
         margin-left: auto;
         margin-right: auto;
         left: 0;
@@ -619,15 +619,11 @@ header {
 .mdl-textfield--floating-label.is-focused .mdl-textfield__label,
 .mdl-textfield--floating-label.is-dirty .mdl-textfield__label,
 .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
-    color: #3f51b5;
-    font-size: 12px;
-    top: 4px;
+    color: #68746E !important;
+    font-size: 12px!important;
+    top: -3px !important;
+    left: 5px !important;
     visibility: visible;
-}
-
-.mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
-    color: #d50000;
-    font-size: 15px !important;
 }
 
 .mdl-textfield__label::after {
@@ -692,11 +688,10 @@ header {
     visibility: hidden;
     width: 10px;
 }
-
 .mdl-textfield__label {
     bottom: 0;
     color: #464646 !important;
-    font-size: 16px;
+    font-size: 16px!important;
     left: 15px !important;
     right: 0;
     pointer-events: none;
@@ -709,16 +704,6 @@ header {
     text-align: left;
 }
 
-.mdl-textfield--floating-label.is-focused .mdl-textfield__label,
-.mdl-textfield--floating-label.is-dirty .mdl-textfield__label,
-.mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
-    color: #68746E !important;
-    font-size: 12px;
-    top: -3px !important;
-    left: 5px !important;
-    visibility: visible;
-}
-
 .mdl-textfield__input {
     border: none;
     border-bottom-color: currentcolor;
@@ -729,7 +714,7 @@ header {
     font-size: 16px;
     font-family: "Helvetica", "Arial", sans-serif;
     margin: 0;
-    padding: 6px 15px 4px !important;
+    padding: 10px 15px 0 !important;
     width: 100%;
     background: 0 0;
     text-align: left;
@@ -2057,7 +2042,9 @@ footer{
 //
 //THANK YOU PAGE
 .gracias-container {
-    background-image: linear-gradient(white, #805f58);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 75%), url('../img/jpg/background-thank-you-page.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 35px 0;
     height: 100vh;
     display: flex;
@@ -2065,7 +2052,7 @@ footer{
 
     .dialog-container {
         width: 90%;
-        padding: 35px 7px;
+        padding: 35px 0px;
         margin: 0 auto;
         background-color: #FFFFFF;
         max-width: 625px;
@@ -2077,7 +2064,7 @@ footer{
             justify-content: center;
 
             img {
-                width: 87px;
+                width: 340px;
                 margin: 0 15px;
             }
         }
@@ -2100,7 +2087,6 @@ footer{
 
                 &:nth-child(3) {
                     line-height: 21px;
-                    margin-top: 8px;
                 }
 
                 &:nth-child(4) {
@@ -2136,20 +2122,10 @@ footer{
                 cursor: pointer;
                 padding: 13px 10px;
                 margin: 0 auto;
+                border-radius: 40px;
                 background-color: #F15D29;
 
                 &:hover {
-                    img {
-                        margin-left: 15px;
-                    }
-                }
-
-                img {
-                    width: 12px;
-                    margin-left: 5px;
-                    -webkit-transition: all 300ms;
-                    -moz-transition: all 300ms;
-                    -o-transition: all 300ms;
                 }
             }
         }
@@ -2179,14 +2155,16 @@ footer{
 
 @media only screen and (min-width: 1024px) {
     .gracias-container {
-        background-image: linear-gradient(white, #805f58);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 75%), url('../img/jpg/back-berkeley-thank-you-page.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
         padding: 40px 0;
         height: 100vh;
 
         .dialog-container {
             .logos-container {
                 img {
-                    width: 116px;
+                    width: 340px;
                     margin: 0 23px;
                 }
             }
@@ -2199,24 +2177,24 @@ footer{
 
                     &:nth-child(1) {
                         line-height: 57px;
-                        font-size: 44px;
+                        font-size: 32px;
                     }
 
                     &:nth-child(2) {
                         line-height: 24px;
-                        font-size: 18px;
+                        font-size: 20px;
                     }
 
                     &:nth-child(3) {
                         line-height: 24px;
-                        font-size: 18px;
+                        font-size: 20px;
                     }
 
                     &:nth-child(4) {
                         width: 100%;
-                        margin: 8px auto 0;
+                        margin: 15px auto 0;
                         line-height: 22px;
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -2225,6 +2203,7 @@ footer{
                 div {
                     &:nth-child(1) {
                         line-height: 27px;
+                        font-size: 24px;
                         margin: 30px auto 20px;
                     }
                 }

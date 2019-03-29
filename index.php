@@ -77,7 +77,7 @@
             <div class="formulario-cont">
                 <div class="form" id="form">
                     <div class="form-title fs18 negro23">Para obtener más información, por favor llena el formulario</div>
-                    <form class="form-cont" id="formulary" method="POST" action="">
+                    <form class="form-cont" id="formulary" method="POST" action="http://www2.eruditus.com/l/63132/2019-03-28/3l5l53p">
 
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                             <input class="opsRe mdl-textfield__input" type="text" id="first_name" name="first_name"
@@ -133,7 +133,7 @@
                             <input type="hidden" name="browser" id="browser" value="">
                             <input type="hidden" name="course" id="course" value="Marketing Digital">
                             <!--This value is different in each in the pages-->
-                            <input type="hidden" name="retURL" value="https://latam.emeritus.org/programas/Thank-you-page-MD.php">
+                            <input type="hidden" name="retURL" value="http://localhost/BERKLEY-LP/Thanks.php">
                             <button class="opsBo fs16 blanco" type="submit">
                                 Descarga el folleto
                             </button>
