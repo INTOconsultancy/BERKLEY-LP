@@ -4,18 +4,16 @@
 <head>
     <meta charset="utf-8">
     <title>BERKELEY | Alta dirección e innovación</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/scss/stylesheet.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- MATERIAL DESIGN LITE -->
     <link rel="stylesheet" href="assets/libs/mdl/material.min.css">
     <script src="assets/libs/mdl/material.min.js"></script>
-    <!--getmdl-select-->
-    <link rel="stylesheet" href="assets/libs/mdl/getmdl-select.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script defer src="assets/libs/mdl/getmdl-select.min.js"></script>
+    <script type="text/javascript" src="../assets/js/logs.js"></script>
     <!-- MATERIALIZE -->
     <!-- <script src="assets/js/materialize.js"></script> -->
     <!-- <script src="assets/js/materialize.min.js"></script> -->
@@ -29,7 +27,6 @@
     <!-- AOS animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico" />
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico" />
 </head>
 
@@ -76,37 +73,52 @@
         <div class="formulario-container">
             <div class="formulario-cont">
                 <div class="form" id="form">
-                    <div class="form-title fs18 negro23">Para obtener más información, por favor llena el formulario</div>
-                    <form class="form-cont" id="formulary" method="POST" action="http://www2.eruditus.com/l/63132/2019-03-28/3l5l53p">
+                    <div class="form-title fs18 negro23">Para obtener más información, por favor llena el formulario
+                    </div>
+                    <form class="form-cont" id="formulary" method="POST"
+                        action="http://www2.eruditus.com/l/63132/2019-03-28/3l5l53p">
+
+                        <div class="mdl-textfield mov-input mdl-js-textfield mdl-textfield--floating-label">
+                            <select id="salutation" name="salutation"
+                                class="opsRe mdl-textfield__input salutation mov-input-class" required>
+                                <option value=""></option>
+                                <option value="Mr">Mr.</option>
+                                <option value="Ms">Ms.</option>
+                                <option value="Mrs">Mrs.</option>
+                                <option value="Dr">Dr.</option>
+                                <option value="Prof">Prof.</option>
+                            </select>
+                            <label class="mdl-textfield__label" for="salutation">Saludo</label>
+                        </div>
 
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                             <input class="opsRe mdl-textfield__input" type="text" id="first_name" name="first_name"
-                                pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" required>
+                                pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" required style="text-transform: capitalize;">
                             <label class="opsRe mdl-textfield__label" for="first_name">Nombre(s)</label>
                         </div>
 
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                             <input class="opsRe mdl-textfield__input" type="text" id="last_name" name="last_name"
-                                pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" required>
+                                pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" required style="text-transform: capitalize;">
                             <label class="opsRe mdl-textfield__label" for="last_name">Apellido(s)</label>
                         </div>
 
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="opsRe mdl-textfield__input" type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$"
-                                required>
+                            <input class="opsRe mdl-textfield__input" type="email" id="email" name="email"
+                                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$" required>
                             <label class="opsRe mdl-textfield__label" for="email">Email</label>
                         </div>
 
                         <div class="mdl-textfield mov-input mdl-js-textfield mdl-textfield--floating-label">
-                            <select id="country" name="Country" class="mdl-textfield__input Country mov-input-class"
+                            <select id="country" name="country" class="mdl-textfield__input country mov-input-class"
                                 required>
                             </select>
                             <label class="opsRe mdl-textfield__label" for="country">País</label>
                         </div>
 
                         <div class="mdl-textfield mov-input mdl-js-textfield mdl-textfield--floating-label">
-                            <select id="work_experience" name="work_experience" class="opsRe mdl-textfield__input work_experience mov-input-class"
-                                required>
+                            <select id="00N9000000CnMwU" name="00N9000000CnMwU"
+                                class="opsRe mdl-textfield__input 00N9000000CnMwU mov-input-class" required>
                                 <option value=""></option>
                                 <option value="Less than 5 Years">Menos de 5 años</option>
                                 <option value="5-10 Years">5-10 años</option>
@@ -114,26 +126,36 @@
                                 <option value="15-20 Years">15-20 años</option>
                                 <option value="> 20 Years">&gt; 20 años</option>
                             </select>
-                            <label class="mdl-textfield__label" for="work_experience">Experiencia Profesional</label>
+                            <label class="mdl-textfield__label" for="00N9000000CnMwU">Experiencia Profesional</label>
                         </div>
 
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="opsRe mdl-textfield__input" type="tel" id="mobile" name="mobile" maxlength="15"
-                                minlength="5" onkeypress="return valida(event)" pattern="[0-9]+" required>
+                            <input class="opsRe mdl-textfield__input" type="tel" id="mobile" name="mobile"
+                                maxlength="15" minlength="5" onkeypress="return valida(event)" pattern="[0-9]+"
+                                required>
                             <label class="opsRe mdl-textfield__label" for="mobile">Número de celular</label>
                         </div>
-
+                        <!-- This is a GDPRS's text -->
+                        <div class="">
+                            <div class="form-group" id="gdpr-consent" style="display:none;">
+                                <label class="checkbox-inline fs12 robotoRe" style="color: #464646; line-height: 15px;">
+                                    <input type="checkbox" value="Yes I Agree" name="agree" id="agree">
+                                    Me gustaría recibir correos electrónicos y otras comunicaciones de EMERITUS
+                                    y sus socios universitarios sobre este curso y otros cursos relevantes.
+                                </label>
+                            </div>
+                        </div>
                         <div class="button-container">
-                            <input type="hidden" name="utm_source" id="lead_source" value="">
+                            <input type="hidden" name="lead_source" id="lead_source" value="">
                             <input type="hidden" name="utm_source" id="utm_source" value="">
                             <input type="hidden" name="utm_medium" id="utm_medium" value="">
                             <input type="hidden" name="utm_term" id="utm_term" value="">
                             <input type="hidden" name="utm_content" id="utm_content" value="">
                             <input type="hidden" name="utm_campaign" id="utm_campaign" value="">
                             <input type="hidden" name="browser" id="browser" value="">
-                            <input type="hidden" name="course" id="course" value="Marketing Digital">
+                            <input type="hidden" name="course" id="course" value="Berkeley - Alta Dirección e Innovación">
                             <!--This value is different in each in the pages-->
-                            <input type="hidden" name="retURL" value="http://localhost/BERKLEY-LP/Thanks.php">
+                            <input type="hidden" name="retURL" value="http://latam.eruditus.com/programas/Berkeley/Alta-Direccion-e-Innovacion/Thanks.php">
                             <button class="opsBo fs16 blanco" type="submit">
                                 Descarga el folleto
                             </button>
@@ -145,7 +167,8 @@
                             Tus datos personales no serán compartidos con terceros.
                         </div>
                         <div>
-                            <a class="grapBo fs14 rosaFB" href="https://www.eruditus.com/privacy-policy/" target="_blank" rel="noopener noreferrer">
+                            <a class="grapBo fs14 rosaFB" href="https://www.eruditus.com/privacy-policy/"
+                                target="_blank" rel="noopener noreferrer">
                                 Política de Privacidad
                             </a>
                         </div>
@@ -211,7 +234,8 @@
             </div>
             <div class="caracteristicas" data-aos="fade-up" data-aos-delay="100">
                 <div class="caracteristica-img">
-                    <img src="assets/img/svg/icono-exploracion-ecosistema.svg" alt="EXPLORACIÓN-DEL-ECOSISTEMA-DE-SILICON-VALLEY">
+                    <img src="assets/img/svg/icono-exploracion-ecosistema.svg"
+                        alt="EXPLORACIÓN-DEL-ECOSISTEMA-DE-SILICON-VALLEY">
                 </div>
                 <div class="caracteristica-info">
                     <div class="title grapBo fs18 negro19">
@@ -300,7 +324,8 @@
                 En el caso de México, se ofrece esta posibilidad vía Laudex, institución financiera no bancaria que
                 apoya a
                 estudiantes graduados y por graduarse con préstamos para acceder a educación en universidades
-                privadas. Para más información enviar un correo a: <a class="naranja33" href="mailto:latam.berkeley@eruditus.com">latam.berkeley@eruditus.com</a>
+                privadas. Para más información enviar un correo a: <a class="naranja33"
+                    href="mailto:latam.berkeley@eruditus.com">latam.berkeley@eruditus.com</a>
             </div>
         </div>
     </div>
@@ -388,7 +413,8 @@
                                 Financieros</span></li>
                         <li class="opsRe fs16 azulBF"><span class="gris66">Ventas Regionales y Líder de Marketing -
                                 Pharma / Servicios Financieros / Productos de TI</span></li>
-                        <li class="opsRe fs16 azulBF"><span class="gris66">Director Financiero – Empresa de manufactura</span></li>
+                        <li class="opsRe fs16 azulBF"><span class="gris66">Director Financiero – Empresa de
+                                manufactura</span></li>
                         <li class="opsRe fs16 azulBF"><span class="gris66">VP de Operaciones – Hospitalidad</span></li>
                         <li class="opsRe fs16 azulBF"><span class="gris66">Analista de Negocios Senior – Industria
                                 automotriz</span></li>
@@ -470,7 +496,8 @@
                     <div class="profesor-data">
                         <div class="grapRe fs24 negro19">Ernesto Dal Bó PhD</div>
                         <div class="opsBo fs16 negro4D">Investigador y profesor titular</div>
-                        <div class="grapRe fs16 negro4D">Co-director del Centro para la Economía y Política de Berkeley</div>
+                        <div class="grapRe fs16 negro4D">Co-director del Centro para la Economía y Política de Berkeley
+                        </div>
                     </div>
                 </div>
                 <hr>
@@ -484,7 +511,8 @@
                 </div>
             </div>
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/1l18jnBYgWw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                <iframe src="https://www.youtube.com/embed/1l18jnBYgWw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
         </div>
@@ -509,13 +537,13 @@
                 </div>
                 <hr>
                 <div class="tutor-description grapRe fs14 negro46">
-                    Doctor en Finanzas por la Stanford Graduate School of 
-                    Business, ha sido profesor asistente de finanzas y profesor 
-                    de administración en el desarrollo de carrera en la 
-                    MIT Sloan School of Management. Co-fundador y miembro 
-                    del consejo del Finance Theory Group, ha participado 
-                    como revisor en revistas como American Economic Review, 
-                    el Economic Inquiry Journal y el Journal of Accounting 
+                    Doctor en Finanzas por la Stanford Graduate School of
+                    Business, ha sido profesor asistente de finanzas y profesor
+                    de administración en el desarrollo de carrera en la
+                    MIT Sloan School of Management. Co-fundador y miembro
+                    del consejo del Finance Theory Group, ha participado
+                    como revisor en revistas como American Economic Review,
+                    el Economic Inquiry Journal y el Journal of Accounting
                     Research.
                 </div>
             </div>
@@ -533,13 +561,13 @@
                 </div>
                 <hr>
                 <div class="tutor-description grapRe fs14 negro46">
-                    Doctor en Agricultura y Recursos Económicos por la 
-                    Universidad de California en Berkeley, se ha desempeñado 
-                    como profesor asistente de economía en UCLA y se unió 
-                    a la facultad de Berkeley en el 2009. Actualmente es 
-                    miembro del Bureau for Research and Economic Analysis 
-                    of Development (BREAD),y miembro investigador de la 
-                    International Zeolite Association (IZA) y el National 
+                    Doctor en Agricultura y Recursos Económicos por la
+                    Universidad de California en Berkeley, se ha desempeñado
+                    como profesor asistente de economía en UCLA y se unió
+                    a la facultad de Berkeley en el 2009. Actualmente es
+                    miembro del Bureau for Research and Economic Analysis
+                    of Development (BREAD),y miembro investigador de la
+                    International Zeolite Association (IZA) y el National
                     Bureau of Economic Research (NBER).
                 </div>
             </div>
@@ -557,9 +585,9 @@
                 </div>
                 <hr>
                 <div class="tutor-description grapRe fs14 negro46">
-                    El doctor Pouzo es un reconocido investigador y conferencista. 
-                    Actualmente, sus investigaciones abordan temas de teoría econométrica 
-                    y macroeconomía. Profesor asistente en Berkeley desde el 2009, 
+                    El doctor Pouzo es un reconocido investigador y conferencista.
+                    Actualmente, sus investigaciones abordan temas de teoría econométrica
+                    y macroeconomía. Profesor asistente en Berkeley desde el 2009,
                     es también un autor publicado en múltiples journals académicos.
                 </div>
             </div>
@@ -582,11 +610,11 @@
                             <div class="contenido opsRe fs16 gris6E">
                                 • Herramientas financieras e innovación en la administración
                                 <br>
-                                • Gestión Macro y de Mercadotecnia 
+                                • Gestión Macro y de Mercadotecnia
                                 <br>
-                                • Marketing estratégico, gestión de marketing (CRM) y posicionamiento competitivo 
+                                • Marketing estratégico, gestión de marketing (CRM) y posicionamiento competitivo
                                 <br>
-                                • Modelos de negocio y liderazgo empresarial 
+                                • Modelos de negocio y liderazgo empresarial
                                 <br>
                                 • Analítica de negocios, pensamiento estratégico e innovación
                                 <br>
@@ -603,7 +631,7 @@
                                 (EN LÍNEA) – 2 de septiembre al 1 de noviembre de 2019
                             </div>
                             <div class="contenido opsRe fs16 gris6E">
-                                • Webinar + Actividad: Analítica y ciencia de datos 
+                                • Webinar + Actividad: Analítica y ciencia de datos
                                 <br>
                                 • Actividad práctica: Negociaciones e influencia
                                 <br>
@@ -622,13 +650,13 @@
                             <div class="contenido opsRe fs16 gris6E">
                                 • Innovación disruptiva y mindset empresarial
                                 <br>
-                                • Administración de Mercadotecnia y Estrategia 
+                                • Administración de Mercadotecnia y Estrategia
                                 <br>
                                 • Gestión de marketing, marketing digital y estrategias para mercados competitivos
                                 <br>
-                                • Workshop de gestión política y economía en latinoamérica 
+                                • Workshop de gestión política y economía en latinoamérica
                                 <br>
-                                • Economía política, negociaciones e influencia 
+                                • Economía política, negociaciones e influencia
                                 <br>
                                 • Machine learning e inteligencia artificial para la gestión de negocios
                                 <br>
@@ -647,7 +675,7 @@
                             <div class="contenido opsRe fs16 gris6E">
                                 • Webinar + Acrtividad: Estrategias para negocios digitales y transformación digital
                                 <br>
-                                • Actividad práctica: Contabilidad Financiera y Administrativa 
+                                • Actividad práctica: Contabilidad Financiera y Administrativa
                                 <br>
                                 • Proyecto Final -Etapa 2: Revisión parcial y desarrollo
                             </div>
@@ -662,19 +690,19 @@
                                 (PRESENCIAL) – 11-15 de febrero de 2020
                             </div>
                             <div class="contenido opsRe fs16 gris6E">
-                                • Finanzas y desarrollo de mindset empresarial 
+                                • Finanzas y desarrollo de mindset empresarial
                                 <br>
-                                • Workshop de ecosistemas de innovación 
+                                • Workshop de ecosistemas de innovación
                                 <br>
-                                • Herramientas financieras y motivación para el emprendimiento y la innovación 
+                                • Herramientas financieras y motivación para el emprendimiento y la innovación
                                 <br>
-                                • Workshop de liderazgo, comunicación e influencia 
+                                • Workshop de liderazgo, comunicación e influencia
                                 <br>
-                                • Impulso para el cambio y la ejecución dinámica 
+                                • Impulso para el cambio y la ejecución dinámica
                                 <br>
-                                • DNA adaptativo para la gestión del cambio 
+                                • DNA adaptativo para la gestión del cambio
                                 <br>
-                                • Liderazgo de equipos dinámicos de óptimo desempeño 
+                                • Liderazgo de equipos dinámicos de óptimo desempeño
                                 <br>
                                 • Presentación del capstone strategy Project a panel de profesores
                             </div>
@@ -690,14 +718,15 @@
             Certificado Oficial
         </div>
         <div class="certificado-subtitle opsRe fs20 blanco">
-            Al concluir satisfactoriamente el programa, 
-            los participantes son reconocidos con un 
-            certificado oficial de conclusión de estudios 
-            respaldado por la Universidad de California 
+            Al concluir satisfactoriamente el programa,
+            los participantes son reconocidos con un
+            certificado oficial de conclusión de estudios
+            respaldado por la Universidad de California
             en Berkeley.
         </div>
         <div class="certificado-button">
-            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-certificate opsBo fs16 blanco" id="btn-certificate">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-certificate opsBo fs16 blanco"
+                id="btn-certificate">
                 APLICAR
             </a>
         </div>
@@ -705,9 +734,10 @@
     <!-- Sección Oportunidades -->
     <div class="oportunidades-container">
         <div class="oportunidades-descripcion opsRe fs20 negro46">
-                Adicionalmente, tendrán acceso a todos los 
-                <a class="anaranjado77" href="https://www.haas.berkeley.edu/groups/alumni/benefits/" target="_blank" rel="noopener noreferrer">beneficios de los egresados de Berkeley-Hass,</a>
-                entre los que destacan:
+            Adicionalmente, tendrán acceso a todos los
+            <a class="anaranjado77" href="https://www.haas.berkeley.edu/groups/alumni/benefits/" target="_blank"
+                rel="noopener noreferrer">beneficios de los egresados de Berkeley-Hass,</a>
+            entre los que destacan:
         </div>
         <div class="oportunidades-cont">
             <div class="oportunidad" data-aos="fade-up" data-aos-delay="100">
@@ -740,7 +770,7 @@
                     Oportunidades de aprendizaje
                 </div>
                 <div class="oportunidad-descripcion opsRe fs16 negro46">
-                    Acceso a investigaciones, publicaciones y casos de estudio 
+                    Acceso a investigaciones, publicaciones y casos de estudio
                     con insights de estrategia corporativa e innovación.
                 </div>
             </div>
@@ -758,19 +788,22 @@
                 </div>
                 <div class="descripcion opsRe fs14 blanco">
                     Fundada en 1868, la Universidad de California en
-                    Berkeley es considerada como una de las mejores 
-                    instituciones de educación superior a nivel mundial 
-                    por los rankings internacionales; su oferta educativa 
-                    incluye más de 300 programas en multiplicidad de 
-                    campos y sus alumnos y profesores son acreedores 
+                    Berkeley es considerada como una de las mejores
+                    instituciones de educación superior a nivel mundial
+                    por los rankings internacionales; su oferta educativa
+                    incluye más de 300 programas en multiplicidad de
+                    campos y sus alumnos y profesores son acreedores
                     de 22 premios nobel.
                 </div>
             </div>
         </div>
         <div class="pages">
-            <a class="grapRe fs14 blanco" href="https://www.eruditus.com/terms-of-service/" target="_blank" rel="noopener noreferrer">Términos de servicio</a>
-            <a class="grapRe fs14 blanco" href="https://www.eruditus.com/privacy-policy/" target="_blank" rel="noopener noreferrer">Política de privacidad</a>
-            <a class="grapRe fs14 blanco" href="https://www.eruditus.com/cookie-policy/" target="_blank" rel="noopener noreferrer">Política de cookies</a>
+            <a class="grapRe fs14 blanco" href="https://www.eruditus.com/terms-of-service/" target="_blank"
+                rel="noopener noreferrer">Términos de servicio</a>
+            <a class="grapRe fs14 blanco" href="https://www.eruditus.com/privacy-policy/" target="_blank"
+                rel="noopener noreferrer">Política de privacidad</a>
+            <a class="grapRe fs14 blanco" href="https://www.eruditus.com/cookie-policy/" target="_blank"
+                rel="noopener noreferrer">Política de cookies</a>
         </div>
     </footer>
 
@@ -802,9 +835,57 @@
     </script>
 </body>
 <!-- Populating the countrie, using a function in Countries Script added at the top of this file. -->
+<script async type="text/javascript" src="https://latam.emeritus.org/programas/assets/js/gdpr.js"></script>
 <script type="text/javascript" src="https://latam.emeritus.org/programas/assets/js/countries-latam-update.js"></script>
 <script type="text/javascript">
     populateCountries("country");
+</script>
+<!--
+        Inline script provided by Ruchira's team. It is in charge of reading the params in the URL and inserting them into the
+        form hidden fields to be sent to the provided web service.
+    -->
+<script type="text/javascript">
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
+        var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    jQuery(document).ready(function () {
+        jQuery('#lead_source').val(getParameterByName("utm_source"));
+        jQuery('#utm_source').val(getParameterByName("utm_source"));
+        jQuery('#utm_medium').val(getParameterByName("utm_medium"));
+        jQuery('#utm_content').val(getParameterByName("utm_content"));
+        jQuery('#utm_campaign').val(getParameterByName("utm_campaign"));
+        jQuery('#utm_term').val(getParameterByName("utm_term"));
+    })
+</script>
+
+
+<!-- Inline script provided by Ruchira's team. It is in charge of inserting the Pardot's script. -->
+<script type="text/javascript">
+    piAId = '135351';
+    piCId = '1429';
+
+    (function () {
+        function async_load() {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.src = ('https:' == document.location.protocol ? 'https://pi' : 'https://cdn') +
+                '.pardot.com/pd.js';
+            var c = document.getElementsByTagName('script')[0];
+            c.parentNode.insertBefore(s, c);
+        }
+
+
+        if (window.attachEvent) {
+            window.attachEvent('onload', async_load);
+        } else {
+            window.addEventListener('load', async_load, false);
+        }
+
+    })();
 </script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/onkeypress.js"></script>

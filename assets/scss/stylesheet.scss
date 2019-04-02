@@ -497,7 +497,7 @@ header {
         }
 
         .button-container {
-            margin-top: 12px;
+            margin-top: 5px;
             display: flex;
             justify-content: center;
 
@@ -526,7 +526,7 @@ header {
     }
 
     div {
-        margin: 10px auto 0;
+        margin: 5px auto 0;
         text-align: center;
 
         a {
@@ -551,7 +551,7 @@ header {
 
 @media only screen and (min-width: 1024px) {
     .hero-data-cont {
-        padding: 45px 0 !important;
+        padding: 40px 0 !important;
 
         .data {
             text-align: left !important;
@@ -587,7 +587,7 @@ header {
 
     .formulario-container {
         position: absolute;
-        top: 15px;
+        top: -5px;
         margin-left: auto;
         margin-right: auto;
         left: 0;
