@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-58CTFMQ');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="utf-8">
     <title>BERKELEY | Alta dirección e innovación</title>
     <meta name="viewport"
@@ -13,7 +22,7 @@
     <!-- MATERIAL DESIGN LITE -->
     <link rel="stylesheet" href="assets/libs/mdl/material.min.css">
     <script src="assets/libs/mdl/material.min.js"></script>
-    <script type="text/javascript" src="../assets/js/logs.js"></script>
+    <script type="text/javascript" src="assets/js/logs.js"></script>
     <!-- MATERIALIZE -->
     <!-- <script src="assets/js/materialize.js"></script> -->
     <!-- <script src="assets/js/materialize.min.js"></script> -->
@@ -31,6 +40,22 @@
 </head>
 
 <body>
+        
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58CTFMQ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Getting the querystring -->
+    <?php
+        $queryStringArray = array();
+        foreach ($_GET as $key => $value) {
+            $parameter = $key . "=" . $value;
+            array_push($queryStringArray, $parameter);
+        }
+        $queryString = implode("&", $queryStringArray);
+    ?>
+
     <header>
         <div class="header-container">
             <img class="Logo-one" src="assets/img/svg/logo-Berkeley-Executive-Education.svg" alt="BERKELEY">
@@ -75,10 +100,10 @@
                 <div class="form" id="form">
                     <div class="form-title fs18 negro23">Para obtener más información, por favor llena el formulario
                     </div>
-                    <form class="form-cont" id="formulary" method="POST"
+                    <form class="form-cont" id="fordesk" method="POST"
                         action="http://www2.eruditus.com/l/63132/2019-03-28/3l5l53p">
 
-                        <div class="mdl-textfield mov-input mdl-js-textfield mdl-textfield--floating-label">
+                        <div class="mdl-textfield mov-input mdl-js-textfield mdl-textfield--floating-label" style="width: 35%;">
                             <select id="salutation" name="salutation"
                                 class="opsRe mdl-textfield__input salutation mov-input-class" required>
                                 <option value=""></option>
@@ -91,7 +116,7 @@
                             <label class="mdl-textfield__label" for="salutation">Saludo</label>
                         </div>
 
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 63%;">
                             <input class="opsRe mdl-textfield__input" type="text" id="first_name" name="first_name"
                                 pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" required style="text-transform: capitalize;">
                             <label class="opsRe mdl-textfield__label" for="first_name">Nombre(s)</label>
@@ -119,12 +144,12 @@
                         <div class="mdl-textfield mov-input mdl-js-textfield mdl-textfield--floating-label">
                             <select id="00N9000000CnMwU" name="00N9000000CnMwU"
                                 class="opsRe mdl-textfield__input 00N9000000CnMwU mov-input-class" required>
+                                
                                 <option value=""></option>
-                                <option value="Less than 5 Years">Menos de 5 años</option>
-                                <option value="5-10 Years">5-10 años</option>
-                                <option value="10-15 Years">10-15 años</option>
+                                <option value="&gt; 20 Years">20 años</option>
                                 <option value="15-20 Years">15-20 años</option>
-                                <option value="> 20 Years">&gt; 20 años</option>
+                                <option value="10-15 Years">10-15 años</option>
+                                <option value="&lt; 10 Years">Menos de 10 años</option>
                             </select>
                             <label class="mdl-textfield__label" for="00N9000000CnMwU">Experiencia Profesional</label>
                         </div>
@@ -135,16 +160,7 @@
                                 required>
                             <label class="opsRe mdl-textfield__label" for="mobile">Número de celular</label>
                         </div>
-                        <!-- This is a GDPRS's text -->
-                        <div class="">
-                            <div class="form-group" id="gdpr-consent" style="display:none;">
-                                <label class="checkbox-inline fs12 robotoRe" style="color: #464646; line-height: 15px;">
-                                    <input type="checkbox" value="Yes I Agree" name="agree" id="agree">
-                                    Me gustaría recibir correos electrónicos y otras comunicaciones de EMERITUS
-                                    y sus socios universitarios sobre este curso y otros cursos relevantes.
-                                </label>
-                            </div>
-                        </div>
+
                         <div class="button-container">
                             <input type="hidden" name="lead_source" id="lead_source" value="">
                             <input type="hidden" name="utm_source" id="utm_source" value="">
@@ -156,7 +172,7 @@
                             <input type="hidden" name="course" id="course" value="Berkeley - Alta Dirección e Innovación">
                             <!--This value is different in each in the pages-->
                             <input type="hidden" name="retURL" value="http://latam.eruditus.com/programas/Berkeley/Alta-Direccion-e-Innovacion/Thanks.php">
-                            <button class="opsBo fs16 blanco" type="submit">
+                            <button class="opsBo fs16 blanco" type="submit" id="btn-download-brochure">
                                 Descarga el folleto
                             </button>
                         </div> <!-- button-container -->
@@ -725,8 +741,8 @@
             en Berkeley.
         </div>
         <div class="certificado-button">
-            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-certificate opsBo fs16 blanco"
-                id="btn-certificate">
+            <a href="https://eruditus.secure.force.com/SMAI" target="_blank" rel="noopener noreferrer" class="btn-certificate opsBo fs16 blanco"
+                id="btn-apply-now">
                 APLICAR
             </a>
         </div>
@@ -835,7 +851,6 @@
     </script>
 </body>
 <!-- Populating the countrie, using a function in Countries Script added at the top of this file. -->
-<script async type="text/javascript" src="https://latam.emeritus.org/programas/assets/js/gdpr.js"></script>
 <script type="text/javascript" src="https://latam.emeritus.org/programas/assets/js/countries-latam-update.js"></script>
 <script type="text/javascript">
     populateCountries("country");

@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R,QSA]
+
+RewriteRule ^$ /programas/Berkeley/Alta-Direccion-e-Innovacion [L]
+
+
+</IfModule>

@@ -490,6 +490,10 @@ header {
         width: 100%;
         margin: 0 auto;
         max-width: 395px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        display: flex;
 
         .mdl-textfield {
             width: 100%;
@@ -497,6 +501,7 @@ header {
         }
 
         .button-container {
+            width: 100%;
             margin-top: 5px;
             display: flex;
             justify-content: center;
@@ -587,7 +592,7 @@ header {
 
     .formulario-container {
         position: absolute;
-        top: -5px;
+        top: 20px;
         margin-left: auto;
         margin-right: auto;
         left: 0;
