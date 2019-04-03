@@ -39,7 +39,7 @@
                 <div class="opsBo fs18 negro19">
                     ¿Listo para el próximo paso?
                 </div>
-                <a class="btn-gracias opsBo fs16 blanco" href="##" target="_blank" rel="noopener noreferrer">
+                <a class="btn-gracias opsBo fs16 blanco" href="https://eruditus.secure.force.com/SMAI" target="_blank" rel="noopener noreferrer">
                     APLICAR
                 </a>
             </div>

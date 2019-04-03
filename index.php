@@ -101,7 +101,7 @@
                     <div class="form-title fs18 negro23">Para obtener más información, por favor llena el formulario
                     </div>
                     <form class="form-cont" id="fordesk" method="POST"
-                        action="http://www2.eruditus.com/l/63132/2019-03-28/3l5l53p">
+                        action="https://www2.eruditus.com/l/63132/2019-03-28/3l5l53p">
 
                         <div class="mdl-textfield mov-input mdl-js-textfield mdl-textfield--floating-label" style="width: 35%;">
                             <select id="salutation" name="salutation"
@@ -171,7 +171,7 @@
                             <input type="hidden" name="browser" id="browser" value="">
                             <input type="hidden" name="course" id="course" value="Berkeley - Alta Dirección e Innovación">
                             <!--This value is different in each in the pages-->
-                            <input type="hidden" name="retURL" value="http://latam.eruditus.com/programas/Berkeley/Alta-Direccion-e-Innovacion/Thanks.php">
+                            <input type="hidden" name="retURL" value="https://latam.eruditus.com/programas/Berkeley/Alta-Direccion-e-Innovacion/Thanks.php">
                             <button class="opsBo fs16 blanco" type="submit" id="btn-download-brochure">
                                 Descarga el folleto
                             </button>
