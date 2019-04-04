@@ -4,11 +4,22 @@
 <head>
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-58CTFMQ');</script>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-58CTFMQ');
+    </script>
     <!-- End Google Tag Manager -->
 
     <meta charset="utf-8">
@@ -40,10 +51,10 @@
 </head>
 
 <body>
-        
+
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58CTFMQ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58CTFMQ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Getting the querystring -->
@@ -103,7 +114,8 @@
                     <form class="form-cont" id="fordesk" method="POST"
                         action="https://www2.eruditus.com/l/63132/2019-03-28/3l5l53p">
 
-                        <div class="mdl-textfield mov-input mdl-js-textfield mdl-textfield--floating-label" style="width: 35%;">
+                        <div class="mdl-textfield mov-input mdl-js-textfield mdl-textfield--floating-label"
+                            style="width: 35%;">
                             <select id="salutation" name="salutation"
                                 class="opsRe mdl-textfield__input salutation mov-input-class" required>
                                 <option value=""></option>
@@ -144,12 +156,12 @@
                         <div class="mdl-textfield mov-input mdl-js-textfield mdl-textfield--floating-label">
                             <select id="00N9000000CnMwU" name="00N9000000CnMwU"
                                 class="opsRe mdl-textfield__input 00N9000000CnMwU mov-input-class" required>
-                                
+
                                 <option value=""></option>
-                                <option value="&gt; 20 Years">20 años</option>
-                                <option value="15-20 Years">15-20 años</option>
-                                <option value="10-15 Years">10-15 años</option>
                                 <option value="&lt; 10 Years">Menos de 10 años</option>
+                                <option value="10-15 Years">10-15 años</option>
+                                <option value="15-20 Years">15-20 años</option>
+                                <option value="&gt; 20 Years">20 años</option>
                             </select>
                             <label class="mdl-textfield__label" for="00N9000000CnMwU">Experiencia Profesional</label>
                         </div>
@@ -162,16 +174,18 @@
                         </div>
 
                         <div class="button-container">
-                            <input type="hidden" name="lead_source" id="lead_source" value="">
-                            <input type="hidden" name="utm_source" id="utm_source" value="">
+                            <input type="hidden" name="lead_source" id="lead_source" value="Web">
+                            <input type="hidden" name="utm_source" id="utm_source" value="Web">
                             <input type="hidden" name="utm_medium" id="utm_medium" value="">
                             <input type="hidden" name="utm_term" id="utm_term" value="">
                             <input type="hidden" name="utm_content" id="utm_content" value="">
                             <input type="hidden" name="utm_campaign" id="utm_campaign" value="">
                             <input type="hidden" name="browser" id="browser" value="">
-                            <input type="hidden" name="course" id="course" value="Berkeley - Alta Dirección e Innovación">
+                            <input type="hidden" name="course" id="course"
+                                value="Berkeley - Alta Dirección e Innovación">
                             <!--This value is different in each in the pages-->
-                            <input type="hidden" name="retURL" value="https://latam.eruditus.com/programas/Berkeley/Alta-Direccion-e-Innovacion/Thanks.php">
+                            <input type="hidden" name="retURL"
+                                value="https://latam.eruditus.com/programas/Berkeley/Alta-Direccion-e-Innovacion/Thanks.php">
                             <button class="opsBo fs16 blanco" type="submit" id="btn-download-brochure">
                                 Descarga el folleto
                             </button>
@@ -741,8 +755,8 @@
             en Berkeley.
         </div>
         <div class="certificado-button">
-            <a href="https://eruditus.secure.force.com/SMAI" target="_blank" rel="noopener noreferrer" class="btn-certificate opsBo fs16 blanco"
-                id="btn-apply-now">
+            <a href="https://eruditus.secure.force.com/SMAI" target="_blank" rel="noopener noreferrer"
+                class="btn-certificate opsBo fs16 blanco" id="btn-apply-now">
                 APLICAR
             </a>
         </div>
@@ -868,8 +882,13 @@
     }
 
     jQuery(document).ready(function () {
-        jQuery('#lead_source').val(getParameterByName("utm_source"));
-        jQuery('#utm_source').val(getParameterByName("utm_source"));
+
+        // Extracting the default value for the required fields on Sales Force.
+        // This way we are sure that the getParameterByName function gets called once for the 'utm_source' param.
+        var utm_source_value = getParameterByName("utm_source");
+
+        jQuery('#lead_source').val( utm_source_value !== "" ? utm_source_value : "Web");
+        jQuery('#utm_source').val( utm_source_value !== "" ? utm_source_value : "Web");
         jQuery('#utm_medium').val(getParameterByName("utm_medium"));
         jQuery('#utm_content').val(getParameterByName("utm_content"));
         jQuery('#utm_campaign').val(getParameterByName("utm_campaign"));
@@ -878,21 +897,24 @@
 </script>
 
 
-<!-- Inline script provided by Ruchira's team. It is in charge of inserting the Pardot's script. -->
+<!-- Inline script provided by Ruchira's team. It is in charge of inserting the Pardot's script only for Eruditus. -->
 <script type="text/javascript">
-    piAId = '135351';
-    piCId = '1429';
+    piAId = '64132';
+    piCId = '2042';
 
     (function () {
+
         function async_load() {
+
             var s = document.createElement('script');
             s.type = 'text/javascript';
-            s.src = ('https:' == document.location.protocol ? 'https://pi' : 'https://cdn') +
-                '.pardot.com/pd.js';
+
+            s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+
             var c = document.getElementsByTagName('script')[0];
             c.parentNode.insertBefore(s, c);
-        }
 
+        }
 
         if (window.attachEvent) {
             window.attachEvent('onload', async_load);
@@ -902,6 +924,7 @@
 
     })();
 </script>
+
 <script src="assets/js/main.js"></script>
 <script src="assets/js/onkeypress.js"></script>
 
