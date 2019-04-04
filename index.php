@@ -870,32 +870,10 @@
     populateCountries("country");
 </script>
 <!--
-        Inline script provided by Ruchira's team. It is in charge of reading the params in the URL and inserting them into the
-        form hidden fields to be sent to the provided web service.
-    -->
-<script type="text/javascript">
-    function getParameterByName(name) {
-        name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
-        var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
-            results = regex.exec(location.search);
-        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-    }
-
-    jQuery(document).ready(function () {
-
-        // Extracting the default value for the required fields on Sales Force.
-        // This way we are sure that the getParameterByName function gets called once for the 'utm_source' param.
-        var utm_source_value = getParameterByName("utm_source");
-
-        jQuery('#lead_source').val( utm_source_value !== "" ? utm_source_value : "Web");
-        jQuery('#utm_source').val( utm_source_value !== "" ? utm_source_value : "Web");
-        jQuery('#utm_medium').val(getParameterByName("utm_medium"));
-        jQuery('#utm_content').val(getParameterByName("utm_content"));
-        jQuery('#utm_campaign').val(getParameterByName("utm_campaign"));
-        jQuery('#utm_term').val(getParameterByName("utm_term"));
-    })
-</script>
-
+    Inline script provided by Ruchira's team. It is in charge of reading the params in the URL and inserting them into the
+    form hidden fields to be sent to the provided web service.
+-->
+<script type="text/javascript" src="assets/js/utm_populate.js"></script>
 
 <!-- Inline script provided by Ruchira's team. It is in charge of inserting the Pardot's script only for Eruditus. -->
 <script type="text/javascript">
@@ -925,6 +903,7 @@
     })();
 </script>
 
+<!-- Extra scripts -->
 <script src="assets/js/main.js"></script>
 <script src="assets/js/onkeypress.js"></script>
 
