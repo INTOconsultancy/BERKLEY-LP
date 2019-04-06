@@ -23,7 +23,7 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="refresh" CONTENT="1;URL= #"> -->
+    <meta http-equiv="refresh" CONTENT="1;URL= http://bit.ly/2Tymacn">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>¡Gracias por tu interés!</title>
     <link rel="stylesheet" href="assets/scss/stylesheet.css">
@@ -54,7 +54,7 @@
                     Alta dirección e innovación
                 </div>
                 <div class="opsRe fs14 negro46">
-                    Si tu descarga no comienza <a class="opsRe naranja33" href="#">da click aquí</a>
+                    Si tu descarga no comienza <a class="opsRe naranja33" href="http://bit.ly/2Tymacn">da click aquí</a>
                 </div>
             </div>
             <div class="gracias-linea"></div>

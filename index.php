@@ -197,7 +197,7 @@
                             Tus datos personales no serán compartidos con terceros.
                         </div>
                         <div>
-                            <a class="grapBo fs14 rosaFB" href="https://www.eruditus.com/privacy-policy/"
+                            <a class="grapBo fs14 rosaFB" href="https://latam.eruditus.com/politicas-de-privacidad.php"
                                 target="_blank" rel="noopener noreferrer">
                                 Política de Privacidad
                             </a>
@@ -828,11 +828,11 @@
             </div>
         </div>
         <div class="pages">
-            <a class="grapRe fs14 blanco" href="https://www.eruditus.com/terms-of-service/" target="_blank"
+            <a class="grapRe fs14 blanco" href="https://latam.eruditus.com/terminos-del-servicio.php" target="_blank"
                 rel="noopener noreferrer">Términos de servicio</a>
-            <a class="grapRe fs14 blanco" href="https://www.eruditus.com/privacy-policy/" target="_blank"
+            <a class="grapRe fs14 blanco" href="https://latam.eruditus.com/politicas-de-privacidad.php" target="_blank"
                 rel="noopener noreferrer">Política de privacidad</a>
-            <a class="grapRe fs14 blanco" href="https://www.eruditus.com/cookie-policy/" target="_blank"
+            <a class="grapRe fs14 blanco" href="https://latam.eruditus.com/politicas-de-cookies.php" target="_blank"
                 rel="noopener noreferrer">Política de cookies</a>
         </div>
     </footer>

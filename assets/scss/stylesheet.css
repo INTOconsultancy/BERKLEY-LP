@@ -1960,5 +1960,29 @@ footer .pages a {
     margin: 0 20px;
   }
 }
+.terms-cookies-privacy-container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 35px 16px;
+  max-width: 550px;
+}
+@media only screen and (min-width: 1024px) {
+  .terms-cookies-privacy-container {
+    padding: 40px 0;
+  }
+}
+.terms-cookies-privacy-container .terms-title, .terms-cookies-privacy-container .cookies-title, .terms-cookies-privacy-container .privacy-title {
+  line-height: 44px;
+  margin-bottom: 30px;
+}
+.terms-cookies-privacy-container .subtitle {
+  margin-bottom: 5px;
+}
+.terms-cookies-privacy-container .terms-container, .terms-cookies-privacy-container .cookies-container, .terms-cookies-privacy-container .privacy-container {
+  line-height: 22px;
+}
+.terms-cookies-privacy-container ol li, .terms-cookies-privacy-container ul li {
+  margin-left: 15px;
+}
 
 /*# sourceMappingURL=stylesheet.css.map */

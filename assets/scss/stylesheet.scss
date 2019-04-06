@@ -2243,5 +2243,30 @@ footer{
         }
     }
 }
-
+//
+//Terms, Cookies and Policy privacy
+.terms-cookies-privacy-container{
+    width: 95%;
+    margin: 0 auto;
+    padding: 35px 16px;
+    max-width: 550px;
+    @media only screen and (min-width: 1024px){
+        padding: 40px 0;
+    }
+    .terms-title, .cookies-title, .privacy-title{
+        line-height: 44px;
+        margin-bottom: 30px;
+    }
+    .subtitle{
+        margin-bottom: 5px;
+    }
+    .terms-container, .cookies-container, .privacy-container{
+        line-height: 22px;
+    }
+    ol, ul{
+        li{
+            margin-left: 15px;
+        }
+    }
+}
 //
